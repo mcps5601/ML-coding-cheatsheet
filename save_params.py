@@ -14,6 +14,5 @@ def save_dict_to_json(dict_of_params, json_path):
     """
 
     with open(json_path, 'w') as f:
-        # We need to convert the values to float for json (it doesn't accept np.array, np.float, )
-        dict_of_params = {k: float(v) for k, v in dict_of_params.items()}
+        dict_of_params = {k: v for k, v in dict_of_params.items()}
         json.dump(dict_of_params, f, indent=4)
