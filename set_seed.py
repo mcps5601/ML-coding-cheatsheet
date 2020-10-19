@@ -44,7 +44,7 @@ def tf2_set_seed(seed):
     Args:
         seed: an integer number to initialize a pseudorandom number generator
     """
-    tf.random.set_seed(seed_value)
-    os.environ['PYTHONHASHSEED']=str(seed_value)
-    random.seed(seed_value)
-    np.random.seed(seed_value)
+    tf.random.set_seed(seed)
+    os.environ['PYTHONHASHSEED']=str(seed)
+    random.seed(seed)
+    np.random.seed(seed)
