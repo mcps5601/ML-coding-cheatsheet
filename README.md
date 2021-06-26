@@ -1,2 +1,2 @@
 # ML-coding-cheatsheet
-一些常用的實作 functions
+Some frequently-used functions or scripts for myself.
